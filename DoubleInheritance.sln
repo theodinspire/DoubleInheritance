@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoubleInheritance", "DoubleInheritance\DoubleInheritance.csproj", "{CA4453F2-0A2C-4289-9454-23F7A28DF02A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{5CB23413-BED4-4194-BCE0-2A6683540710}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA4453F2-0A2C-4289-9454-23F7A28DF02A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA4453F2-0A2C-4289-9454-23F7A28DF02A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA4453F2-0A2C-4289-9454-23F7A28DF02A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA4453F2-0A2C-4289-9454-23F7A28DF02A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CB23413-BED4-4194-BCE0-2A6683540710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CB23413-BED4-4194-BCE0-2A6683540710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CB23413-BED4-4194-BCE0-2A6683540710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CB23413-BED4-4194-BCE0-2A6683540710}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
