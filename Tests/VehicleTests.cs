@@ -109,12 +109,25 @@ VALUES
 		}
 
 		[Test]
-		public void CanReadBicycleFromVehicles()
+		public void CanReadBicycleFromListOfVehicles()
 		{
 			var vehicles = this.connection.GetTable<Vehicle>().ToList();
 			// System.InvalidOperationException : Instances of abstract classes cannot be created.
 
 			var bicycle = vehicles.FirstOrDefault(x => x.Type == VehicleType.Bicycle);
+
+			Assert.That(bicycle, Is.Not.Null);
+			Assert.That(bicycle, Is.TypeOf(typeof(Bicycle)));
+		}
+
+		[Test]
+		public void CanReadBicycleFromBicyclesAsVehicles()
+		{
+			var vehicles = this.connection.GetTable<Vehicle>()
+				.Where(x => x.Type == VehicleType.Bicycle).ToList();
+			// System.InvalidOperationException : Instances of abstract classes cannot be created.
+
+			var bicycle = vehicles.FirstOrDefault();
 
 			Assert.That(bicycle, Is.Not.Null);
 			Assert.That(bicycle, Is.TypeOf(typeof(Bicycle)));
