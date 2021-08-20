@@ -61,6 +61,7 @@ VALUES
 			var bicycle = this.connection.GetTable<Bicycle>().FirstOrDefault();
 
 			Assert.That(bicycle, Is.Not.Null);
+			// Passes
 		}
 
 		[Test]
@@ -69,6 +70,7 @@ VALUES
 			var car = this.connection.GetTable<Car>().FirstOrDefault();
 
 			Assert.That(car, Is.Not.Null);
+			// Passes
 		}
 
 		[Test]
@@ -77,6 +79,7 @@ VALUES
 			var lorry = this.connection.GetTable<Lorry>().FirstOrDefault();
 
 			Assert.That(lorry, Is.Not.Null);
+			// Passes
 		}
 
 		[Test]

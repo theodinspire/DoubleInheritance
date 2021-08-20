@@ -42,7 +42,14 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Locomotion\Automobile.cs" />
+        <Compile Include="Locomotion\AutomobileType.cs" />
+        <Compile Include="Locomotion\Bicycle.cs" />
+        <Compile Include="Locomotion\BicycleType.cs" />
+        <Compile Include="Locomotion\Car.cs" />
+        <Compile Include="Locomotion\Lorry.cs" />
         <Compile Include="Locomotion\Vehicle.cs" />
+        <Compile Include="Locomotion\VehicleType.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
