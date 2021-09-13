@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using DoubleInheritance.Locomotion;
 using LinqToDB;
@@ -58,6 +57,7 @@ VALUES
 			this.local.Dispose();
 		}
 
+		// 3.4.2 Success
 		[Test]
 		public void CanReadBicycles()
 		{
@@ -67,6 +67,7 @@ VALUES
 			// Passes
 		}
 
+		// 3.4.2 Success
 		[Test]
 		public void CanReadCars()
 		{
@@ -76,6 +77,7 @@ VALUES
 			// Passes
 		}
 
+		// 3.4.2 Success
 		[Test]
 		public void CanReadLorries()
 		{
@@ -85,6 +87,7 @@ VALUES
 			// Passes
 		}
 
+		// 3.4.2 FAILURE
 		[Test]
 		public void CanReadCarFromAutomobiles()
 		{
@@ -97,6 +100,7 @@ VALUES
 			Assert.That(car, Is.TypeOf(typeof(Car)));
 		}
 
+		// 3.4.2 FAILURE
 		[Test]
 		public void CanReadCarFromVehicles()
 		{
@@ -111,6 +115,7 @@ VALUES
 			Assert.That(car, Is.TypeOf(typeof(Car)));
 		}
 
+		// 3.4.2 FAILURE
 		[Test]
 		public void CanReadBicycleFromListOfVehicles()
 		{
@@ -123,6 +128,7 @@ VALUES
 			Assert.That(bicycle, Is.TypeOf(typeof(Bicycle)));
 		}
 
+		// 3.4.2 FAILURE
 		[Test]
 		public void CanReadBicycleFromBicyclesAsVehicles()
 		{
@@ -136,6 +142,7 @@ VALUES
 			Assert.That(bicycle, Is.TypeOf(typeof(Bicycle)));
 		}
 
+		// 3.4.2 Success
 		[Test]
 		public void CanInsertBicycle()
 		{
@@ -154,6 +161,7 @@ VALUES
 			// Passes
 		}
 
+		// 3.4.2 Success
 		[Test]
 		public void CanInsertBicycleAsVehicle()
 		{
@@ -168,6 +176,7 @@ VALUES
 			// Passes
 		}
 
+		// 3.4.2 Success
 		[Test]
 		public void CanInsertLorry()
 		{
@@ -182,6 +191,7 @@ VALUES
 			// Passes
 		}
 
+		// 3.4.2 FAILURE
 		[Test]
 		public void CanInsertMixedVehicleCollection()
 		{
@@ -206,6 +216,7 @@ VALUES
 			Assert.That(objectsInserted, Is.EqualTo(list.Count));
 		}
 
+		// 3.4.2 FAILURE
 		[Test]
 		public void CanInsertMixedAutomobileCollection()
 		{
@@ -230,6 +241,7 @@ VALUES
 			Assert.That(objectsInserted, Is.EqualTo(list.Count));
 		}
 
+		// 3.4.2 Success
 		[Test]
 		public void CanInsertBicycleCollection()
 		{
@@ -254,6 +266,7 @@ VALUES
 			// Passes
 		}
 
+		// 3.4.2 Success
 		[Test]
 		public void CanInsertCarCollection()
 		{
@@ -278,6 +291,7 @@ VALUES
 			// Passes
 		}
 
+		// 3.4.2 FAILURE
 		[Test]
 		public void CanInsertBicycleAsVehicleCollection()
 		{
