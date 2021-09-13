@@ -32,8 +32,8 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
-        <Reference Include="linq2db, Version=3.4.2.0, Culture=neutral, PublicKeyToken=e41013125f9e410a">
-          <HintPath>..\packages\linq2db.3.4.2\lib\net46\linq2db.dll</HintPath>
+        <Reference Include="linq2db, Version=3.4.4.0, Culture=neutral, PublicKeyToken=e41013125f9e410a">
+          <HintPath>..\packages\linq2db.3.4.4\lib\net46\linq2db.dll</HintPath>
           <Private>True</Private>
         </Reference>
         <Reference Include="System" />

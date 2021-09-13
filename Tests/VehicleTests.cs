@@ -191,7 +191,7 @@ VALUES
 			// Passes
 		}
 
-		// 3.4.2 FAILURE
+		// 3.4.2 Success
 		[Test]
 		public void CanInsertMixedVehicleCollection()
 		{
@@ -216,7 +216,7 @@ VALUES
 			Assert.That(objectsInserted, Is.EqualTo(list.Count));
 		}
 
-		// 3.4.2 FAILURE
+		// 3.4.2 Success
 		[Test]
 		public void CanInsertMixedAutomobileCollection()
 		{
@@ -291,7 +291,7 @@ VALUES
 			// Passes
 		}
 
-		// 3.4.2 FAILURE
+		// 3.4.4 Success
 		[Test]
 		public void CanInsertBicycleAsVehicleCollection()
 		{
